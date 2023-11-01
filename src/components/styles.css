@@ -1,0 +1,274 @@
+
+/* *****************************For Card************************************************** */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.kanban-card {
+    width: 350px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9aa;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+  }
+
+.kanban-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: -3px -3px 20px rgb(167, 163, 163);
+} 
+
+
+.box-1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.id{
+    color: #696969 ;
+}
+.user-name{
+  color: #696969 ;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: rgb(241, 198, 137);
+  color: white;
+
+}
+
+.box-2{
+  display: flex;
+  align-items: baseline;
+}
+
+.title
+{
+    color: black;
+    font-weight: 600;
+    font-size: medium; 
+    width: 250px;
+}
+
+.circle-2{
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(187, 180, 180);
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+
+
+.box-3
+{
+    display: flex;
+    gap:10px ;
+    align-items: baseline;
+}
+.line{
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 5px;
+    align-self: center;
+}
+.box-inner
+{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+   width: 10px;
+   height: 10px;
+   border-radius: 20px;
+   background-color: rgb(188, 186, 186) ;
+   margin-right: 5px;
+}
+.tag
+{
+    color: #696969  ;
+    font-weight: 400;
+}
+
+
+/*   
+****************************For NavBar****************************************************** */
+
+.navbar
+{
+    background-color: rgb(245, 245, 245);
+    padding: 10px 20px ;
+}
+
+.display-options {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px;
+    position: relative;
+  }
+  
+  .display-toggle {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid rgb(184, 183, 183);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 5px;
+    box-shadow: -3px 3px 15px rgb(180, 178, 178);
+  }
+  
+  .display-toggle.open {
+    background-color: #f0f0f0; 
+  }
+
+  .toggle-icon1 {
+    font-size: larger;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  
+  .toggle-icon2 {
+    margin-left: 5px; 
+  }
+  
+  
+  .display-menu {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+  }
+  
+  
+  
+  .dropdown-label {
+    margin-bottom: 5px;
+    color: #909090;
+    font-weight: 500;
+  }
+  
+  .dropdown select {
+    width: 150px; 
+  }
+  
+
+  .dropdown {
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .inner-option{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 10px;
+    gap: 50px;
+  }
+
+.container
+{
+    background-color:rgb(231, 231, 245);
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+
+.kanban-board {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+}
+
+.kanban-group{
+  margin: 10px;
+  padding: 10px; 
+}
+
+.heading{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 10px;
+  padding-right: 30px;
+}
+
+.left{
+  display: flex;
+  gap: 5px;
+  display: flex;
+ align-items: baseline;
+}
+.left :nth-child(1){
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  margin-right: 5px;
+  border: 1px solid rgb(154, 150, 150);
+}
+
+.left :nth-child(2){
+  color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.left :nth-child(3){
+  color: #696969 ;
+}
+.right{
+  display: flex;
+  font-size: larger;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  color: #696969 ;
+
+}
+.right :nth-child(2){
+  position: absolute;
+  left: 20px;
+  bottom: 4px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
