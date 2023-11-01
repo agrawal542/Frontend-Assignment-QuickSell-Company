@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar({grouping,setGrouping,ordering,setOrdering}) {
   const [displayMenuOpen, setDisplayMenuOpen] = useState(false);
@@ -10,9 +12,10 @@ function Navbar({grouping,setGrouping,ordering,setOrdering}) {
   return (
    <div className='navbar'>
        <div className="display-options">
-      <div className={`display-toggle ${displayMenuOpen ? 'open' : ''}`} onClick={toggleDisplayMenu}>
-      <spam className="toggle-icon1">&#8801;</spam>Display  <span className="toggle-icon2">&or;</span>
-      </div>
+       <div className={`display-toggle ${displayMenuOpen ? 'open' : ''}`} onClick={toggleDisplayMenu}>
+  <FontAwesomeIcon icon={faBars} className="toggle-icon1" />Display <FontAwesomeIcon icon={faChevronDown} className="toggle-icon2" />
+</div>
+
       {displayMenuOpen && (
         <div className="display-menu">
           <div className="dropdown">

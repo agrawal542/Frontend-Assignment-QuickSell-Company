@@ -1,4 +1,3 @@
-
 /* *****************************For Card************************************************** */
 *{
   margin: 0;
@@ -11,7 +10,7 @@
     margin: 10px;
     padding: 15px;
     border: 1px solid #ddd;
-    background-color: #f9f9f9aa;
+    background-color: #ffffff;
     font-size: smaller;
     display: flex;
     flex-direction: column;
@@ -111,7 +110,7 @@
 .navbar
 {
     background-color: rgb(245, 245, 245);
-    padding: 10px 20px ;
+    padding: 25px 3% ;
 }
 
 .display-options {
@@ -152,8 +151,8 @@
   .display-menu {
     border: 1px solid #ccc;
     border-radius: 3px;
-    padding: 10px;
-    background-color: #fff;
+    padding: 4px;
+    background-color:rgb(243, 243, 244);
     display: flex;
     flex-direction: column; 
     align-items: flex-start; 
@@ -190,9 +189,11 @@
     gap: 50px;
   }
 
+
+/* ******************************KanbanBoard********************************************** */
 .container
 {
-    background-color:rgb(231, 231, 245);
+    background-color:rgb(238, 238, 249);
     height: 100vh;
     overflow-x: auto;
     overflow-y: auto;
@@ -203,7 +204,7 @@
 .kanban-board {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 20px;
   justify-content: center;
 }
 
@@ -257,18 +258,3 @@
   left: 20px;
   bottom: 4px;  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
